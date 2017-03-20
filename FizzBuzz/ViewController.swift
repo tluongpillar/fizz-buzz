@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     }
 
     func incrementCount() {
+        count += 1
     }
 }
 
