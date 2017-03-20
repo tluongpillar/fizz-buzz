@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,12 +31,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBX-1u-S61">
+                                <rect key="frame" x="16" y="567" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="nvl-4d-T9V"/>
+                                </constraints>
+                                <state key="normal" title="Increment"/>
+                                <connections>
+                                    <action selector="incrementButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZyT-BW-PTY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SBX-1u-S61" secondAttribute="bottom" id="Mkc-x5-OM2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SBX-1u-S61" secondAttribute="trailing" id="OOb-Wf-bVH"/>
                             <constraint firstAttribute="trailing" secondItem="xJK-7k-JHt" secondAttribute="trailing" id="P2E-zP-v4C"/>
                             <constraint firstItem="xJK-7k-JHt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cM0-Tq-vmV"/>
                             <constraint firstItem="xJK-7k-JHt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fh7-Qz-JOG"/>
+                            <constraint firstItem="SBX-1u-S61" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gqM-9e-pbO"/>
                         </constraints>
                     </view>
                     <connections>

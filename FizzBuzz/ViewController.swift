@@ -11,22 +11,19 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var countLabel: UILabel!
+    @IBAction func incrementButton(_ sender: UIButton) {
+        incrementCount()
+    }
     
     var count = 0 {
         didSet {
-            countLabel.text = count.description
+            countLabel?.text = count.description
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        count = 5
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        count = 0
     }
 
     func incrementCount() {
